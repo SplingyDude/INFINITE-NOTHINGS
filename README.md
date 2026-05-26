@@ -1,77 +1,54 @@
-# INFINITE NOTHINGS
-## Admin: Book One
+# INFINITE NOTHINGS: ADMIN, Book One
 
-A hyperpunk novel. Post-Calamity. Built for gamers who don't know what they want to read.
-
-**Author:** Matthew E. Reynolds  
-**Status:** Line-edited. Worldbuilding inconsistencies flagged.  
-**License:** GPL v3 (engine) / Doujin-permissive (WAD)
+> A hyperpunk novel by Matthew E. Reynolds.
+> Released as an open-fragment supersigil under GPL v3 (engine) and doujin-permissive (WAD) terms.
 
 ---
 
-## Read the Work
+## What this is
 
-- **Word:** See Releases → `INFINITE_NOTHINGS_line_edited.docx`
-- **Markdown:** `manuscript/INFINITE_NOTHINGS.md` (coming soon)
+A first-person novel about Sean — eighteen when the story opens, twenty-seven by the end — who wakes from a coma converted into a Second-Generation Admin: a human rebuilt out of Holy Code instead of flesh, tasked with patching a reality his parents accidentally broke two centuries earlier. He marries a succubus. He fights Cain. He goes to Hell and back. The narration is self-aware, autistic, gamer-vocabulary, lore-dumping in character. Cosmic horror in one hand, romantic intimacy in the other.
 
-## The Licensing Model
+Roughly 63,800 words. Prologue + 27 chapters across two acts + epilogue.
 
-This work splits into two layers:
+## Open-fragment supersigil
 
-**Engine** (worldbuilding, systems, vocabulary) — GPL v3
-- Cyrus units, Admins, Memetic Currency Convention, Holy Code
-- Demon-angel truce, server forks, reality rules
-- **You can:** fork it, modify it, build with it
-- **Requirement:** modifications stay GPL v3
+The book isn't only a book. It's structured as an invitation.
 
-**WAD** (this specific story) — Doujin-permissive
-- Sean's arc, Tomasa, the plot
-- **You can:** write fanfiction, retcon, continue
-- **Selling:** doujin scale (small-press fan works) is OK
-- **Beyond doujin:** ask first
+In 1816 Lord Byron started a vampire story at the Villa Diodati, abandoned it as a fragment, and his physician John Polidori built *The Vampyre* from the seed without permission. The publisher then put Byron's name on Polidori's work to sell copies. Byron was furious. The fragment got completed, but unethically.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+This project inverts that arrangement. The seed is released *deliberately*, the license is attached up front, and the worldbuilding is separated from the specific story so each can be inherited cleanly:
 
----
+- **The engine** — the cosmology, the Admin Corps, Cyrus units, Holy Code, the demon-angel truce, Memetic Currency, the rules of how reality re-knits itself — is GPL v3. Fork it, build with it, write your own stories in it. Engine modifications stay copyleft.
+- **The WAD** — Sean and Tomasa, the specific arc, the specific scenes and phrasing — is doujin-permissive. Fanfiction welcome. Retcons welcome. Continuations welcome. Small-press fan editions welcome. Commercial use at scale needs a conversation first.
 
-## What's in This Repo
+Grant Morrison's term for an extended creative work functioning as an ongoing magical sigil is *supersigil*. Every legitimate downstream WAD is another iteration. The fragment isn't a mistake to be cleaned up. The fragment is the point.
 
-- `README.md` — You are here
-- `CLAUDE_CONTEXT.md` — **AI session context. Paste this into Claude to restore full project state after data wipe.**
-- `CONTRIBUTING.md` — How to fork, contribute, understand the GPL/doujin model
-- `EDITORS_REPORT.md` — Editorial notes, 41 line edits applied, worldbuilding inconsistencies flagged
-- `manuscript/INFINITE_NOTHINGS_line_edited.docx` — The edited manuscript
-- `LICENSE` — GPL v3 full text
+## Inspirations
 
----
+- The Doom modding tradition — particularly [UZDoom](https://github.com/UZDoom/UZDoom), the October 2025 fork of GZDoom after the upstream maintainer began merging unvetted AI-generated code with uncertain GPL provenance. The engine/WAD vocabulary and the provenance ethic both come from there.
+- *Brutal Doom* — for the aesthetic of taking an inherited engine and pushing the dial all the way down.
+- Krinkels' *Madness Combat* — for tonal density and the "voice with teeth" approach to credit, permission, and authorship.
+- The Romantic-era fragment tradition (Byron, Polidori, Mary Shelley at the Villa Diodati) — for the structural problem this project is the answer to.
 
-## Status
+## How to read
 
-✅ Line edits: 41 mechanical fixes (dialogue tags, grammar, hyphenation)  
-✅ Permission notice: Rewritten in Sean's voice  
-✅ Licensing model: Locked (GPL v3 engine + doujin WAD)  
-⏳ Worldbuilding inconsistencies: Flagged. Awaiting author resolution.
+The manuscript lives in `manuscript/INFINITE_NOTHINGS_line_edited.docx`. A markdown version may follow.
 
-See [EDITORS_REPORT.md](EDITORS_REPORT.md) for the full notes.
+## How to fork, contribute, or continue
 
----
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
-## For the Next AI Session
+## Licensing in one sentence
 
-**Post-wipe, to restore context:**
+GPL v3 on the engine, doujin-permissive on the WAD, no proprietary dialects of either. Full text in [`LICENSE`](./LICENSE); the in-world version is the permission notice inside the manuscript.
 
-1. Go to https://github.com/SplintyDude/INFINITE-NOTHINGS
-2. Open `CLAUDE_CONTEXT.md`
-3. Copy the entire file
-4. Paste it into Claude
-5. Claude will have full project context and can continue
+## Provenance note
 
----
+No AI-generated prose appears in the manuscript. Editorial assistance has been scoped to mechanical line-edits — capitalization after dialogue, hyphenation, object case, idiom corrections — the same surface a human copy-editor would touch. Worldbuilding, plot, character, and voice are entirely the author's. This README and `CONTRIBUTING.md` were drafted with AI assistance from author-established notes; the author reviewed and approved before commit.
 
-## Contribution Model
+This position sits deliberately on the UZDoom side of the GZDoom AI-code argument: tooling-grade assistance acceptable, no AI in the load-bearing creative or licensable layer.
 
-Fork the engine. Write new stories. Build servers in the same reality. See [CONTRIBUTING.md](CONTRIBUTING.md).
+## Author
 
-**One rule:** Don't use the work to hurt anyone in the still-uncollapsed reality.
-
----
+Matthew E. Reynolds.

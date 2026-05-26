@@ -1,112 +1,61 @@
 # Contributing to INFINITE NOTHINGS
 
-This work is open. It runs on GPL v3 (engine) / Doujin-permissive (WAD).
+This isn't a software project, but it borrows software-project conventions because the licensing model is structural and the structure matters. Read this before forking.
 
----
+## The engine/WAD distinction
 
-## The Model
+The project is licensed in two layers, modeled on the source-port convention of separating the engine from the WAD content it loads.
 
-**Engine** (worldbuilding, systems, vocabulary)
-- Cyrus units, Admin Corps, Memetic Currency Convention, Holy Code
-- Demon-angel truce, server architecture, reality rules
-- Licensed: GPL v3 (weak copyleft)
+### The engine — GPL v3
 
-**WAD** (this specific story)
-- Sean's arc, Tomasa, characters, specific plot
-- Licensed: Doujin-permissive (small-scale fan commerce OK)
+The engine is the *generalizable* part of the work. Anything that could be lifted out of this specific story and reused in another:
 
----
+- Second-Gen Admins, Cyrus units, Holy Code
+- The Holy Spirit Cipher
+- The demon-angel truce after the Cataclysm
+- The 204-years-after-reality-broke timeline frame
+- Memetic Currency Convention
+- The Hacker/Admin opposition
+- Server-as-forked-reality cosmology
 
-## What You Can Do
+Weak copyleft. If you modify the engine itself — change a rule, add a faction, extend the cosmology — your modifications return to the commons under GPL v3. If you only *use* the engine without modifying it (write a story set in the world without altering the rules), your story is yours under whatever license you pick.
 
-### 1. Write a New Story (Using the Engine)
+### The WAD — doujin-permissive
 
-**You want to:** Write a different story in the post-Cataclysm world (different character, different server, different conflict).
+The WAD is this *specific* story. Sean. Tomasa. The arc from Sean's awakening to the implosion of Cain. The specific scenes, the specific phrasing, the named beats.
 
-**How:**
-1. Fork this repo
-2. Create a new file: `stories/YOUR_STORY_TITLE.md`
-3. Write using the established worldbuilding (Cyrus units work the same way, Admins follow the same rules, Memetic Currency applies, etc.)
-4. Your story is your own license — you can publish it under any license, sell it, do whatever you want
-5. If you want us to know about it: submit a pull request with a link/reference
+- Fanfiction is welcome.
+- Continuations are welcome.
+- Retcons are welcome.
+- Small-press editions for conventions or limited print runs are welcome.
+- Commercial use beyond doujin scale (mass-market editions, anthology inclusion, adaptation rights) requires a conversation with the author.
 
-**No obligation to contribute back.** This is the whole point of weak copyleft — use the engine, your new work isn't forced to be GPL.
+## "GZDoom-compatible standard"
 
-### 2. Modify the Engine (Worldbuilding)
+Borrowed from the source-port community: engine forks should remain *readable* to downstream forks. No proprietary dialects of the worldbuilding. If you split off, others should be able to follow your fork and understand how it relates to the trunk.
 
-**You want to:** Add to the worldbuilding, fix inconsistencies, expand the systems.
+Practically: don't rename Cyrus units to something only your fork knows. If you change a rule, document the change. The point of an open engine is that the next fork can build on yours.
 
-**Examples:**
-- "Here's how Holy Code actually regenerates matter"
-- "I'm resolving the Tomasa age timeline this way"
-- "Here's what the Darknet architecture looks like"
-- "New demon species with Memetic Currency implications"
+## Provenance
 
-**How:**
-1. Fork this repo
-2. Create a branch: `feature/your-change-description`
-3. Edit the worldbuilding in `docs/WORLDBUILDING.md` (or create the file if it doesn't exist)
-4. Document your modification clearly: what you're adding, why, how it affects existing lore
-5. Submit a pull request
-6. We'll discuss: Does this remain GZDoom-compatible? Does it contradict existing canon? Is it good?
+This project sits on the UZDoom side of the AI-code argument, and the position carries across:
 
-**Constraint:** Your modifications must remain GPL v3. Anyone using your fork can also fork further, and all branches stay open.
+- **No AI-generated prose in the manuscript.** Mechanical editorial assistance from AI (capitalization, hyphenation, idiom, object case) is acceptable; AI prose generation is not.
+- **No unvetted AI code in engine forks** if you ever build software around this. If you use AI assistance for tooling, scope it the way copy-editors are scoped: mechanical corrections only, never load-bearing creative or licensable material.
 
-### 3. Sell Your Work
+Forks that violate this position break engine compatibility. Forks that respect it stay in the family.
 
-#### Selling a New Story (WAD)
-- Doujin scale: YES. Small-press fan works (conventions, limited print runs, modest gross). Sell at doujins, Etsy, local cons. Money is OK.
-- Commercial scale: ASK FIRST. Beyond doujin (large publisher, mass printing, significant revenue), discuss with the author.
+## How to contribute
 
-#### Selling an Engine Fork
-- Distribution: YES. Sell copies of your GPL v3 fork. Sell support, hosting, adaptation services.
-- Constraint: Your code must remain GPL v3 and available to all.
+- **Typo or line-edit fix to the trunk:** open a pull request against the relevant file. Keep the PR scoped to mechanical fixes. Plot, character, and voice changes are not accepted into the trunk.
+- **Engine extension you'd like merged upstream:** open an issue first describing the addition and how it coheres with existing cosmology, then a PR. Engine additions must be consistent with what's already there.
+- **Your own WAD (a story set in the world):** don't PR it to this repo. Fork the repo, or start your own and link back. Continuations and retcons belong in your own space.
+- **Engine fork:** see above. Stay readable. Document divergences in your README.
 
-**Standard model:** Sell the service/access/convenience, not the code itself (GPL forbids that anyway).
+## Voice
 
----
+The permission notice inside the manuscript is in Sean's first-person voice. This document and the README are in a conventional editorial voice. Contributions to engine documentation can use either register; contributions to the manuscript itself should match the existing first-person narrator.
 
-## GZDoom-Compatible Standard
+## Author
 
-What does it mean?
-
-**In software:** Forks of GZDoom must remain compatible with the base engine — they can extend it, but they can't break existing WADs or create incompatible dialects.
-
-**For this novel:** Engine forks must remain compatible with the worldbuilding. Specifically:
-
-- **Don't create proprietary terminology.** If you add new concepts, keep them transparent and shareable
-- **Don't silently retcon existing canon.** If you resolve an inconsistency (e.g., "Tomasa is actually 12 years old but ages fast"), make it explicit and discussable
-- **Don't break the core rules.** Admins work a certain way, Memetic Currency works a certain way, the demon-angel truce is stable — don't casually unmake these
-- **Remain readable to downstream forks.** Your modifications should be understandable to others who want to fork further
-
-This is enforced by community use, not by lawyers. If your fork is proprietary or incompatible, people won't build on it.
-
----
-
-## Attribution & Linking Back
-
-When you fork and someone asks where it came from:
-
-"This is based on INFINITE NOTHINGS by Matthew E. Reynolds. Original: [link to canonical repo]"
-
-That's it. You don't have to credit us everywhere. Just be able to point people at the source if asked.
-
----
-
-## One Rule
-
-Don't use the work to hurt anyone in the still-uncollapsed reality.
-
-(Translation: Don't weaponize it against real people. All else is fair game.)
-
----
-
-## Questions?
-
-If you're modifying the engine and unsure if your change is GZDoom-compatible, submit an issue or draft PR. We'll discuss.
-
-If you're selling something and want to check if it's doujin-scale, ask.
-
-If you just want to write a story and check it against canon, go ahead — you don't need permission, just the license covers you.
-
----
+Matthew E. Reynolds.
