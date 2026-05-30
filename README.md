@@ -33,7 +33,7 @@ Grant Morrison's term for an extended creative work functioning as an ongoing ma
 
 ## How to read
 
-The manuscript lives in `manuscript/INFINITE_NOTHINGS_line_edited.docx`. A markdown version may follow.
+The manuscript lives in `manuscript/INFINITE_NOTHINGS_line_edited.docx`. A markdown version exists also.
 
 ## How to fork, contribute, or continue
 
