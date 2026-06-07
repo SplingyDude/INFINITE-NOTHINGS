@@ -1,7 +1,7 @@
 # ADMIN: GENRE EVOLVED
 
 > A hyperpunk forkfiction novel by Matthew E. Reynolds.
-> Released as an open-fragment supersigil under GPL v3 (engine) and doujin-permissive (WAD) terms.
+> Released as an open-fragment hypersigil under GPL v3 (engine) and doujin-permissive (WAD) terms.
 
 ---
 
