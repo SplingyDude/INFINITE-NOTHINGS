@@ -20,7 +20,7 @@ In 1816 Lord Byron started a vampire story at the Villa Diodati, abandoned it as
 This project inverts that arrangement. The seed is released *deliberately*, the license is attached up front, and the worldbuilding is separated from the specific story so each can be inherited cleanly:
 
 - **The engine** — the cosmology, the Admin Corps, Cyrus units, Holy Code, the demon-angel truce, Memetic Currency, the rules of how reality re-knits itself — is GPL v3. Fork it, build with it, write your own stories in it. Engine modifications stay copyleft.
-- **The WAD** — Sean and Tomasa, the specific arc, the specific scenes and phrasing — is doujin-permissive. Fanfiction welcome. Retcons welcome. Continuations welcome. Small-press fan editions welcome. Commercial use at scale needs a conversation first.
+- **The WAD** — Sean and Tomasa, the specific arc, the specific scenes and phrasing — is doujin-permissive. Fanfiction welcome. Retcons welcome. Continuations welcome. Small-press fan editions welcome. Always link my github profile.
 
 Grant Morrison's term for an extended creative work functioning as an ongoing magical sigil is *supersigil*. Every legitimate downstream WAD is another iteration. The fragment isn't a mistake to be cleaned up. The fragment is the point.
 
@@ -31,9 +31,6 @@ Grant Morrison's term for an extended creative work functioning as an ongoing ma
 - Krinkels' *Madness Combat* — for tonal density and the "voice with teeth" approach to credit, permission, and authorship.
 - The Romantic-era fragment tradition (Byron, Polidori, Mary Shelley at the Villa Diodati) — for the structural problem this project is the answer to.
 
-## How to read
-
-The manuscript lives in `manuscript/INFINITE_NOTHINGS_line_edited.docx`. A markdown version exists also.
 
 ## How to fork, contribute, or continue
 
