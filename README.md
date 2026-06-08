@@ -44,7 +44,7 @@ GPL v3 on the engine, doujin-permissive on the WAD, no proprietary dialects of e
 
 No AI-generated prose appears in the manuscript. Editorial assistance has been scoped to mechanical line-edits — capitalization after dialogue, hyphenation, object case, idiom corrections — the same surface a human copy-editor would touch. Worldbuilding, plot, character, and voice are entirely the author's. This README and `CONTRIBUTING.md` were drafted with AI assistance from author-established notes; the author reviewed and approved before commit.
 
-All ai collaboration uses forced kantean, blake and socratic reasoning before artfacts are compiled. A full github scan is performed after the conversation- plot twist prompts ONLY.
+All ai collaboration uses forced kantean, blake and socratic reasoning before artfacts are compiled. A full github scan is performed after the conversation- plot twist prompts ONLY. main prompt: maximize output, minimal resolution
 
 This position sits deliberately on the UZDoom side of the GZDoom AI-code argument: tooling-grade assistance acceptable, no AI in the load-bearing creative or licensable layer.
 
