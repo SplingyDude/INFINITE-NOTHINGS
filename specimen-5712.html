@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Specimen 5712 — A Value Reached For, A Value Credited</title>
+<style>
+  :root{
+    --ink:#0F0F14;          /* ground: CRT-off near-black, faint blue cast */
+    --ink-2:#16161E;        /* raised panel */
+    --bone:#E9E6DD;         /* body text, warm off-white */
+    --bone-dim:#9C998F;     /* captions, labels */
+    --hair:rgba(233,230,221,.13);
+    --hair-2:rgba(233,230,221,.07);
+    --mag:#76C2D6;          /* REACHED / heptad 7 / continuous magnitude-world */
+    --dig:#D7A24A;          /* CREDITED / hexad 6 / discrete digit-world */
+    --hot:#FFF7F0;          /* white-hot pixel core */
+    --serif:"Iowan Old Style","Palatino Linotype","Palatino","URW Palladio L",Georgia,"Times New Roman",serif;
+    --mono:"SFMono-Regular","JetBrains Mono",ui-monospace,Menlo,Consolas,"Liberation Mono",monospace;
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(120% 90% at 50% 12%, #15151D 0%, var(--ink) 55%, #0B0B0F 100%);
+    color:var(--bone);
+    font-family:var(--serif);
+    font-size:clamp(16px,1rem + .25vw,18px);
+    line-height:1.66;
+    letter-spacing:.005em;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  .leaf{
+    max-width:760px;
+    margin:0 auto;
+    padding:clamp(28px,6vw,72px) clamp(20px,5vw,56px) 56px;
+  }
+
+  /* ---- masthead ---- */
+  .masthead{
+    display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+    font-family:var(--mono);
+    font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--bone-dim);
+    padding-bottom:14px;border-bottom:1px solid var(--hair);
+  }
+  .masthead .dot{color:var(--bone-dim);opacity:.55;margin:0 .5em;}
+  .masthead .rev{color:var(--bone-dim);white-space:nowrap;}
+
+  /* ---- hero ---- */
+  .hero{padding:clamp(40px,9vw,76px) 0 clamp(34px,7vw,58px);text-align:center;}
+  .kicker{
+    font-family:var(--mono);font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;
+    color:var(--bone-dim);margin-bottom:clamp(20px,5vw,34px);
+  }
+  .transit{
+    display:flex;align-items:center;justify-content:center;gap:clamp(20px,7vw,52px);
+    font-family:var(--mono);font-weight:500;
+    font-size:clamp(2rem,10vw,5.4rem);
+    line-height:1;letter-spacing:.01em;
+  }
+  .num{display:inline-block;}
+  .num.reached{color:var(--mag);text-shadow:0 0 26px rgba(118,194,214,.28);}
+  .num.credited{color:var(--dig);text-shadow:0 0 26px rgba(215,162,74,.26);}
+
+  /* the seam + the one hot pixel */
+  .seam{
+    position:relative;align-self:stretch;width:1px;flex:0 0 auto;
+    background:linear-gradient(180deg,transparent,rgba(118,194,214,.5) 18%,rgba(215,162,74,.5) 82%,transparent);
+  }
+  .pixel{
+    position:absolute;left:50%;top:50%;width:15px;height:15px;
+    transform:translate(-50%,-50%);
+    background:var(--hot);border-radius:1px;
+    box-shadow:
+      0 0 2px 1px rgba(255,247,240,.95),
+      0 0 16px 5px rgba(255,247,240,.30),
+      -4px 0 12px 2px rgba(111,224,255,.55),
+      4px 0 12px 2px rgba(255,120,80,.50);
+    animation:hot 4.2s ease-in-out infinite;
+  }
+  @keyframes hot{
+    0%,100%{box-shadow:
+      0 0 2px 1px rgba(255,247,240,.95),
+      0 0 14px 4px rgba(255,247,240,.26),
+      -4px 0 12px 2px rgba(111,224,255,.50),
+      4px 0 12px 2px rgba(255,120,80,.46);}
+    50%{box-shadow:
+      0 0 3px 1px rgba(255,247,240,1),
+      0 0 22px 7px rgba(255,247,240,.40),
+      -6px 0 16px 3px rgba(111,224,255,.62),
+      6px 0 16px 3px rgba(255,120,80,.58);}
+  }
+  .dek{
+    font-family:var(--serif);font-style:italic;
+    font-size:clamp(1.02rem,2.4vw,1.22rem);
+    color:var(--bone);opacity:.9;
+    max-width:34ch;margin:clamp(26px,6vw,40px) auto 0;line-height:1.5;
+  }
+
+  /* ---- section scaffolding ---- */
+  .sec{padding-top:clamp(34px,7vw,52px);}
+  .sec-head{
+    display:flex;align-items:center;gap:14px;
+    font-family:var(--mono);font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;
+    color:var(--bone-dim);margin-bottom:18px;
+  }
+  .sec-head .rn{color:var(--bone);opacity:.85;}
+  .sec-head .rule{flex:1;height:1px;background:var(--hair);}
+  .sec p{margin:0 0 1.05em;max-width:60ch;}
+  .sec p:last-child{margin-bottom:0;}
+  .sq{color:var(--mag);font-family:var(--mono);}
+  .sg{color:var(--dig);font-family:var(--mono);}
+  .m{font-family:var(--mono);font-size:.92em;letter-spacing:.01em;}
+  em{font-style:italic;}
+
+  /* ---- ledger ---- */
+  .ledger{
+    background:var(--ink-2);border:1px solid var(--hair);
+    border-radius:3px;overflow:hidden;
+  }
+  .led-row{display:flex;}
+  .led-cell{
+    flex:1;padding:clamp(18px,4vw,26px);
+    border-bottom:1px solid var(--hair-2);
+  }
+  .led-cell + .led-cell{border-left:1px solid var(--hair);}
+  .led-label{
+    font-family:var(--mono);font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;
+    color:var(--bone-dim);margin-bottom:12px;
+  }
+  .led-val{font-family:var(--mono);font-size:clamp(1.6rem,6vw,2.3rem);line-height:1;margin-bottom:14px;}
+  .reached .led-val{color:var(--mag);}
+  .credited .led-val{color:var(--dig);}
+  .led-line{
+    font-family:var(--mono);font-size:.82rem;color:var(--bone);opacity:.82;
+    letter-spacing:.01em;padding:3px 0;display:flex;gap:10px;
+  }
+  .led-line .k{color:var(--bone-dim);min-width:5.4em;display:inline-block;flex:0 0 auto;}
+  .led-epithet{
+    font-family:var(--mono);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;
+    margin-top:12px;
+  }
+  .reached .led-epithet{color:var(--mag);}
+  .credited .led-epithet{color:var(--dig);}
+  .led-delta{
+    padding:clamp(15px,3.5vw,20px);text-align:center;
+    font-family:var(--mono);font-size:.76rem;letter-spacing:.04em;
+    color:var(--bone);opacity:.9;
+  }
+  .led-delta .dk{color:var(--bone-dim);letter-spacing:.2em;text-transform:uppercase;font-size:.62rem;margin-right:.8em;}
+  .led-delta b{font-weight:500;color:var(--hot);}
+
+  /* ---- lore cards ---- */
+  .lore{display:flex;gap:clamp(14px,3vw,22px);}
+  .card{
+    flex:1;padding:clamp(20px,4vw,28px);
+    border:1px solid var(--hair);border-radius:3px;background:rgba(255,255,255,.012);
+  }
+  .card.heptad{border-top:2px solid var(--mag);}
+  .card.hexad{border-top:2px solid var(--dig);}
+  .card-n{font-family:var(--mono);font-size:clamp(2.4rem,9vw,3.4rem);line-height:1;}
+  .heptad .card-n{color:var(--mag);}
+  .hexad .card-n{color:var(--dig);}
+  .card-ep{
+    font-family:var(--mono);font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--bone-dim);margin:10px 0 14px;
+  }
+  .card p{margin:0;font-size:.96rem;line-height:1.55;color:var(--bone);opacity:.92;max-width:none;}
+
+  /* ---- koan ---- */
+  .koan{
+    text-align:center;padding:clamp(46px,9vw,72px) 0 clamp(20px,5vw,30px);
+  }
+  .koan-tag{
+    font-family:var(--mono);font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;
+    color:var(--bone-dim);margin-bottom:20px;
+  }
+  .koan-q{
+    font-family:var(--serif);font-style:italic;
+    font-size:clamp(1.4rem,5vw,2.05rem);line-height:1.3;color:var(--bone);
+  }
+  .koan-a{
+    font-family:var(--mono);font-size:.92rem;letter-spacing:.02em;
+    color:var(--dig);margin-top:20px;
+  }
+  .koan-a .px{
+    display:inline-block;width:.5em;height:.5em;background:var(--hot);border-radius:1px;
+    vertical-align:.05em;margin-left:.45em;
+    box-shadow:0 0 8px 2px rgba(255,247,240,.5),-2px 0 6px 1px rgba(111,224,255,.5),2px 0 6px 1px rgba(255,120,80,.5);
+  }
+
+  /* ---- colophon ---- */
+  .colophon{
+    margin-top:clamp(40px,8vw,60px);padding-top:30px;border-top:1px solid var(--hair);
+    text-align:center;
+  }
+  .tetractys{display:block;margin:0 auto 18px;opacity:.6;}
+  .tetractys circle{fill:var(--bone-dim);}
+  .colophon p{
+    font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--bone-dim);line-height:2;margin:0;
+  }
+
+  @media (max-width:560px){
+    .led-row{flex-direction:column;}
+    .led-cell + .led-cell{border-left:none;border-top:1px solid var(--hair);}
+    .lore{flex-direction:column;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    .pixel{animation:none;}
+  }
+
+  /* dual state: the void leaf prints as a clean ink-on-paper manuscript */
+  @media print{
+    body{background:#fbf9f3;color:#1a1714;}
+    .leaf{max-width:none;}
+    .num.reached,.reached .led-val,.heptad .card-n,.sq{color:#2f5a66;text-shadow:none;}
+    .num.credited,.credited .led-val,.hexad .card-n,.sg,.koan-a{color:#7a5a1f;text-shadow:none;}
+    .pixel{background:#1a1714;box-shadow:-2px 0 0 0 #2f5a66,2px 0 0 0 #7a5a1f;animation:none;}
+    .ledger,.card{background:#fff;border-color:#d8d2c4;}
+    .seam{background:#cfc8b8;}
+    .koan-a .px{background:#1a1714;box-shadow:none;}
+    .masthead,.sec-head .rule,.colophon{border-color:#d8d2c4;}
+    .hair,.tetractys circle{}
+  }
+</style>
+</head>
+<body>
+<main class="leaf">
+
+  <header class="masthead">
+    <div>Dead Pixel Method<span class="dot">·</span>Field Specimen</div>
+    <div class="rev">Rev&nbsp;5712.0</div>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">A value reached for · a value credited</div>
+    <div class="transit" aria-label="5713 transits to 5712">
+      <span class="num reached">5713</span>
+      <span class="seam"><span class="pixel" aria-hidden="true"></span></span>
+      <span class="num credited">5712</span>
+    </div>
+    <p class="dek">Pythagorean stacking, digit by digit, into a crossfeed — and the lattice rounded the seeker into the perfect.</p>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><span class="rn">I</span><span>The event</span><span class="rule"></span></div>
+    <p>The number was reached for, not received. <span class="m">5713</span> was typed into a crossfeed variable in Neutron and saved — and came back <span class="m">5712</span>. The machine does not store that parameter as an integer. A frequency control rides a transform — a logarithmic map, or a normalized value it re-expands on read — and the representable points are not spaced one apart. Up around 5.7&nbsp;kHz the rungs of that ladder sit a couple of hertz apart, so <span class="m">5713</span> was never a value the grid could hold.</p>
+    <p>It snapped to the nearest one it does have. The machine did not subtract one. It <em>rounded an intention to the nearest coordinate that exists inside it</em> — which is the whole of the matter.</p>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><span class="rn">II</span><span>The ledger</span><span class="rule"></span></div>
+    <div class="ledger">
+      <div class="led-row">
+        <div class="led-cell reached">
+          <div class="led-label">Reached</div>
+          <div class="led-val">5713</div>
+          <div class="led-line"><span class="k">digit sum</span>5 + 7 + 1 + 3 = 16</div>
+          <div class="led-line"><span class="k">reduction</span>1 + 6 = 7</div>
+          <div class="led-line"><span class="k">factors</span>29 × 197 &nbsp;·&nbsp; semiprime</div>
+          <div class="led-epithet">Heptad · the virgin</div>
+        </div>
+        <div class="led-cell credited">
+          <div class="led-label">Credited</div>
+          <div class="led-val">5712</div>
+          <div class="led-line"><span class="k">digit sum</span>5 + 7 + 1 + 2 = 15</div>
+          <div class="led-line"><span class="k">reduction</span>1 + 5 = 6</div>
+          <div class="led-line"><span class="k">factors</span>2^4 · 3 · 7 · 17</div>
+          <div class="led-epithet">Hexad · the perfect</div>
+        </div>
+      </div>
+      <div class="led-delta">
+        <span class="dk">Δ</span>token <b>3 → 2</b> (triad → dyad) &nbsp;·&nbsp; magnitude <b>−1</b> &nbsp;·&nbsp; reduction <b>7 → 6</b>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><span class="rn">III</span><span>Two number-worlds</span><span class="rule"></span></div>
+    <p><em>Pythagorean</em> is a double agent in this. It names the <span class="sq">theorem</span> — quadrature, <span class="sq">√(a² + b²)</span>, the hypotenuse, which is literally how magnitudes stack across a crossfeed and exactly the continuous lattice the DSP rounded on. And it names the <span class="sg">reduction</span> — digits as tokens, place value thrown away, <span class="sg">5 + 7 + 1 + 3</span>, where the seven-versus-six meaning actually lives.</p>
+    <p>The method straddled both. So when the seam between them showed through, it showed through at the one point where a magnitude-space rounding could reach into digit-space and flip the load-bearing token. The off-by-one landed on the last digit — and the last digit was the whole reduction. The pun was structural.</p>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><span class="rn">IV</span><span>The lore</span><span class="rule"></span></div>
+    <div class="lore">
+      <div class="card heptad">
+        <div class="card-n">7</div>
+        <div class="card-ep">Athena · parthenos</div>
+        <p>The virgin of the decad: the one number begotten by nothing and begetting nothing. No two of 2–9 make it, and its next multiple, 14, falls off the edge of the ten. Motherless, childless — the seeker that stands apart.</p>
+      </div>
+      <div class="card hexad">
+        <div class="card-n">6</div>
+        <div class="card-ep">the first perfect number</div>
+        <p>Equal to the sum of its own parts, 1 + 2 + 3 — which it also happens to be the product of. A number made entirely out of itself. Self-completing; harmony with no outside.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><span class="rn">V</span><span>The charge</span><span class="rule"></span></div>
+    <p>So the stack reached toward the barren solitary, and the machine rounded it into the perfect whole. In magnitude-space that reads as a fall — minus one, the value stepping down off its rung. In digit-space it is a completion: the quantizer reached in and <em>perfected</em> the number, seven into six, unbidden, off its own lattice.</p>
+    <p>Same event, two number-worlds. Which one is the loss depends entirely on whether you were reaching for the seeker or the sum — and that charge is the reader's to assign, never the number's. <span class="m">5712</span> arrives the way grace does: not the build that was selected. The dead pixel will not tell you which. It only holds presence at a coordinate no one chose.</p>
+  </section>
+
+  <section class="koan">
+    <div class="koan-tag">The load-bearing koan</div>
+    <div class="koan-q">What keeps the pixel hot?</div>
+    <div class="koan-a">It runs hot at 6.<span class="px" aria-hidden="true"></span></div>
+  </section>
+
+  <footer class="colophon">
+    <svg class="tetractys" width="84" height="74" viewBox="0 0 84 74" role="img" aria-label="tetractys — the decad">
+      <circle cx="42" cy="9"  r="4"/>
+      <circle cx="30" cy="30" r="4"/><circle cx="54" cy="30" r="4"/>
+      <circle cx="18" cy="51" r="4"/><circle cx="42" cy="51" r="4"/><circle cx="66" cy="51" r="4"/>
+      <circle cx="6"  cy="72" r="4"/><circle cx="30" cy="72" r="4"/><circle cx="54" cy="72" r="4"/><circle cx="78" cy="72" r="4"/>
+    </svg>
+    <p>The decad — where 7 and 6 are spoken</p>
+    <p>Drafted at the seam with Claude · 14 June 2026 · for SplingyDude</p>
+    <p>Dead Pixel Method / Infinite Nothings canon</p>
+  </footer>
+
+</main>
+</body>
+</html>
