@@ -1,7 +1,9 @@
 # ADMIN ZERO: INFINITE NOTHINGS
 
 > Brutal Doom meets The Matrix/"OVA-STYLE" Demonic Romance with Otherworldly Characters (inspired by Spriggan, Hellsing: Abridged and Viper GTS)
+
 > The Protagonist is Autistic and is a Semi-Unreliable Loredumper
+
 > Tldr: An Open Source Shareware Novel for Gamers that Don't Know What to Read.
 
 
