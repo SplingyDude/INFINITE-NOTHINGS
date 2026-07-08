@@ -1,13 +1,17 @@
-# ADMIN: GENRE EVOLVED
+# ADMIN ZERO: INFINITE NOTHINGS
 
-> A hyperpunk forkfiction novel and solitaire arg scenario for The Dead Pixel Method by Matthew E. Reynolds.
-> Released as an open-fragment hypersigil under GPL v3 (engine) and doujin-permissive (WAD) terms. sell on your own stake on places like gumroad/etc, and we're good. TCs on storefronts, reference this github. Full Novel coming soon.
+> Brutal Doom meets The Matrix/"OVA-STYLE" Demonic Romance with Otherworldly Characters (inspired by Spriggan, Hellsing: Abridged and Viper GTS)
+> The Protagonist is Autistic and is a Semi-Unreliable Loredumper
+> Tldr: An Open Source Shareware Novel for Gamers that Don't Know What to Read.
+
+https://github.com/SplingyDude/INFINITE-NOTHINGS/releases/tag/SHAREWARE_NOVEL
+
 
 ---
 
 ## What this is
 
-A first-person novel about Sean — eighteen when the story opens, twenty-seven by the end — who wakes from a coma converted into a Second-Generation Admin: a human rebuilt out of Holy Code instead of flesh, tasked with patching a reality his parents accidentally broke two centuries earlier. He marries a succubus. He fights Cain. He goes to Hell and back. The narration is self-aware, autistic, gamer-vocabulary, lore-dumping in character. Cosmic horror in one hand, romantic intimacy in the other.
+A first-person novel about Sean, a Semi-Unreliable Loredumper — eighteen when the story opens, twenty-seven by the end — who wakes from a coma converted into a Second-Generation Admin: a human rebuilt out of Holy Code instead of flesh, tasked with patching a reality his parents accidentally broke two centuries earlier. He marries a succubus. He fights Cain. He goes to Hell and back. The narration is self-aware, autistic, gamer-vocabulary, lore-dumping in character. Cosmic horror in one hand, romantic intimacy in the other.
 
 Roughly 63,800 words. Prologue + 27 chapters across two acts + epilogue.
 
