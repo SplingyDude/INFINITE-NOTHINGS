@@ -4,7 +4,6 @@
 > The Protagonist is Autistic and is a Semi-Unreliable Loredumper
 > Tldr: An Open Source Shareware Novel for Gamers that Don't Know What to Read.
 
-https://github.com/SplingyDude/INFINITE-NOTHINGS/releases/tag/SHAREWARE_NOVEL
 
 
 ---
